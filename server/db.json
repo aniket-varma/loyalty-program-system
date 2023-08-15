@@ -2,13 +2,13 @@
     "auth": [
       {
         "id": 1,
-        "email": "alok@gmail.com",
-        "password": "123"
+        "email": "abc@gmail.com",
+        "password": "1234"
       },
       {
-        "email": "aloksah@gmail.com",
-        "password": "123",
-        "id": 2
+        "id": 2,
+        "email": "xyz@gmail.com",
+        "password": "1234"
       }
     ],
     "products": [
