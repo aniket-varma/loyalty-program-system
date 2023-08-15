@@ -20,7 +20,7 @@ export const registerData = (payload) => dispatch => {
     dispatch(regRequest())
     axios({
         method:"post",
-        url:"https://flipkartdatabase.herokuapp.com/auth",
+        url:"http://localhost:5000/auth",
         data: {
             email: payload.email,
             password: payload.password
@@ -51,7 +51,7 @@ export const getUserData = () => dispatch => {
     dispatch(getUserRequest())
     axios({
         method:"GET",
-        url:"https://flipkartdatabase.herokuapp.com/auth"
+        url:"http://localhost:5000/auth"
     })
     .then(res => dispatch(getUserSuccess(res.data)))
     .then(err => dispatch(getUserFailure(err)))

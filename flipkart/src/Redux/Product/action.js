@@ -17,7 +17,7 @@ export const getProductFailure = () => ({
 //axios call to get all the product data and sending it to reducer
 export const getProduct = () => dispatch => {
     dispatch(getProductRequest())
-    axios.get("https://flipkartdatabase.herokuapp.com/products")
+    axios.get("http://localhost:5000/products")
     .then(res => dispatch(getProductSuccess(res.data)))
     .catch(() => dispatch(getProductFailure()))
 }
